@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div style=" cursor: pointer; font-size: 25px;" <h1>VISWA</h1>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'am <span>Viswa</span> <br>from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/viswaphoto1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a developer with hands-on experience in the React framework, where I’ve successfully
+                        completed multiple projects focusing on dynamic and responsive web applications. I am proficient
+                        in building modern, interactive user interfaces using React’s component-based architecture.
+                        Additionally, I have solid backend development knowledge in Node.js, Express, and MongoDB,
+                        allowing me to create full-stack applications. My expertise includes setting up efficient APIs,
+                        managing databases, and ensuring seamless interaction between the front-end and back-end.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experinece</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web App Interfaces with Figma</li>
+                            <li><span>Web Development</span><br> Web App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Previous</span><br>Had Experince in working with React Framework</li>
+                            <li><span>Current</span><br> Working in a Development Team at startup Skool Saver</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="services">
+        <div class="container">
+            <h2 class="services-title">My Services</h2>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aperiam enim perspiciatis impedit
+                        dignissimos aliquid doloribus libero officia esse asperiores.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>UI/ UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aperiam enim perspiciatis impedit
+                        dignissimos aliquid doloribus libero officia esse asperiores.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aperiam enim perspiciatis impedit
+                        dignissimos aliquid doloribus libero officia esse asperiores.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="services-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/dogs.jpg" alt="work" style="height: 100%;">
+                    <div class="layer">
+                        <h3>Dog App</h3>
+                        <p>I created a Dogs app that allows users to explore a dog Feeding Plan. The app is built using
+                            the Bootstrap framework, ensuring a responsive and visually appealing design, while
+                            delivering a smooth and engaging user experience.</p>
+                        <a href="https://viswav442.github.io/bootstrap-website/" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images//gmailImage.jpg" alt="work" style="height: 100%;">
+                    <div class="layer">
+                        <h3>Gmail Application</h3>
+                        <p>I developed a Gmail app that allows users to send emails, utilizing Firebase for data storage
+                            and hosting. This project showcases my ability to integrate front-end functionality with
+                            backend services, while leveraging Firebase to provide a seamless and scalable user
+                            experience.</p>
+                        <a href="https://clone-9d472.firebaseapp.com/" target="_blank"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images//work-3.png" alt="work">
+                    <div class="layer">
+                        <h3>Online Shopping App(In Progress)</h3>
+                        <p>I developing an e-commerce website where users can browse and shop for products. The site is
+                            built using React for the front end, with Node.js, Express, and MongoDB powering the
+                            backend. This ensures a seamless user experience, from browsing to checkout, while
+                            maintaining efficient data handling and responsive design.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>viswa9167@gmail.com</p>
+                    <p>+91 9581622686</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/a-viswanath-reddy-a19077244/"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/viswav442"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://leetcode.com/u/viswa9167/"><i class="fa-solid fa-code"></i></a>
+                    </div>
+                    <a href="./images/VISWARESUME (2).pdf" download class="btn btn2">Download cv</a>
+                </div>
+                <div class="contact-right">
+                    <form action="#">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>Copyright @ Viswa. Made with Love</p p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
